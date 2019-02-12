@@ -41,23 +41,24 @@ def test_dependencies_annotation_detection():
     Container.target()
 
 
+class DepGlobal:
+    pass
+
+
 def test_dependencies_lazy_annotation_detection():
     """detect dependency by lazy type annotation.
 
     All annotations will be lazy in Python 4.0.
     """
-    class Dep:
-        pass
-
     class Target:
-        def __init__(self, name: 'Dep'):
+        def __init__(self, name: 'DepGlobal'):
             self.name = name
 
         def __call__(self) -> bool:
-            assert isinstance(self.name, Dep)
+            assert isinstance(self.name, DepGlobal)
 
     class Container(dependencies.Injector):
-        dep = Dep
+        dep = DepGlobal
         target = Target
 
     Container.target()
