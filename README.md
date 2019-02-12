@@ -17,3 +17,16 @@ List of dependency injection libraries for Python, sorted by stars:
 | Good docs          | :heavy_check_mark: | :heavy_check_mark:  | :x:                | :x:                |
 | Explicit container | :heavy_check_mark: | :x:                 | :x:                | :heavy_check_mark: |
 | Type annotation    | :x:                | :heavy_check_mark:  | :heavy_check_mark: | :x:                |
+| Lazy annotation    | :x:                | :heavy_check_mark:  | :heavy_check_mark: | :x:                |
+| Name detection     | :heavy_check_mark: | :x:                 | :x:                | :x:                |
+| Function as target | :x:                | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: |
+| Partial injection  | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: |
+| Overload deps      | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: | :x:                |
+| Deps for deps      | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: |
+
+## Run tests
+
+```bash
+pip3 install --user -r requirements.txt
+pytest --tb=short
+```
