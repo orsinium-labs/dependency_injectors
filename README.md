@@ -47,3 +47,10 @@ See [tests](./tests/) dir and docs for libraries for usage examples.
 pip3 install --user -r requirements.txt
 pytest --tb=short
 ```
+
+## Not tested yet
+
+* [serum](https://github.com/suned/serum)
+* [haps](https://github.com/ekiro/haps)
+* [picobox](https://github.com/ikalnytskyi/picobox)
+* [injectable](https://github.com/allrod5/injectable)
