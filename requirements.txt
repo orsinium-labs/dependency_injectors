@@ -1,3 +1,4 @@
 git+https://github.com/dry-python/dependencies.git#egg=dependencies
 git+https://github.com/anlutro/diay.py.git#egg=diay
 git+https://github.com/Finistere/antidote.git#egg=antidote
+git+https://github.com/ets-labs/python-dependency-injector#egg=dependency_injector
